@@ -1,0 +1,14 @@
+{
+  "name": "forestgazer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:paiza-learning/forestgazer.git",
+  "author": "paiza-learning",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
