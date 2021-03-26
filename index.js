@@ -1,7 +1,8 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const { exec } = require("child_process");
 const app = express();
+
+const port = 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -19,4 +20,4 @@ app.post("/webhook", (req, res) => {
   res.end();
 });
 
-app.listen(3000, () => console.log("listening on port 3000"));
+app.listen(port, () => console.log(`listening on port ${port}`));
